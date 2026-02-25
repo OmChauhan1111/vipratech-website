@@ -3,6 +3,8 @@
 
 {% block body %}
 
+{% load static %}
+
 
 
 
@@ -287,19 +289,21 @@
         <div class="row text-center g-4">
 
             {% for i in "1234" %}
-            <div class="col-lg-3 col-md-6">
-                <div class="team-card p-4">
-                    <div class="team-img-wrapper mx-auto mb-3">
-                        <img src="/static/{{ i }}.png"
-                             class="rounded-circle img-fluid"
-                             alt="Team Member">
-                    </div>
-                    <h6 class="fw-bold">Team Member</h6>
-                    <p class="text-primary small">Senior Engineer</p>
-                    <a class="btn btn-outline-primary btn-sm mt-2" href="#">View Profile</a>
-                </div>
-            </div>
-            {% endfor %}
+<div class="col-lg-3 col-md-6">
+    <div class="team-card p-4">
+        <div class="team-img-wrapper mx-auto mb-3">
+
+            <img src="{% static i|add:'.png' %}"
+                 class="rounded-circle img-fluid"
+                 alt="Team Member">
+
+        </div>
+        <h6 class="fw-bold">Team Member</h6>
+        <p class="text-primary small">Senior Engineer</p>
+        <a class="btn btn-outline-primary btn-sm mt-2" href="#">View Profile</a>
+    </div>
+</div>
+{% endfor %}
 
         </div>
     </div>
