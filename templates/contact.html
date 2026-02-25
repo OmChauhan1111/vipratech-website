@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Contact Us{% endblock title %} 
+
+
+{% block body %}
+
+<!-- CONTACT HERO -->
+<section class="contact-hero text-center py-5">
+    <div class="container">
+        <span class="contact-badge"><h1>✉ CONTACT</h1></span>
+        <h1 class="fw-bold mt-3">
+            Ready to explore a build or modernization?<br>
+            Let’s talk.
+        </h1>
+    </div>
+</section>
+
+
+<!-- CONTACT CONTENT -->
+<section class="py-5 contact-wrapper">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- LEFT FORM -->
+            <div class="col-lg-6">
+                <div class="contact-card p-5">
+                {% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+
+                    <form method="post" action="/contact/">
+    {% csrf_token %}
+
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label>Name</label>
+            <input type="text"
+                   class="form-control modern-input"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+        </div>
+
+        <div class="col-md-6">
+            <label>Email</label>
+            <input type="email"
+                   class="form-control modern-input"
+                   name="email"
+                   placeholder="Enter your email"
+                   required>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <label>Project focus</label>
+        <input type="text"
+               class="form-control modern-input"
+               name="focus"
+               placeholder="Platform build, AI agent pilot, ops automation...">
+    </div>
+
+    <div class="mt-3">
+        <label>Tell us about your roadmap</label>
+        <textarea rows="5"
+                  class="form-control modern-input"
+                  name="roadmap"
+                  required></textarea>
+    </div>
+
+    <button class="btn btn-primary mt-4 px-4 py-2" type="submit">
+        Send message
+    </button>
+</form>
+
+                </div>
+            </div>
+
+            <!-- RIGHT INFO PANEL -->
+            <div class="col-lg-6">
+                <div class="contact-info p-5 h-100">
+
+                    <h3 class="fw-bold mb-3">
+                        Vipra Technologies (VipraTech)
+                    </h3>
+
+                    <p class="opacity-75">
+                        Kota, Rajasthan, India
+                    </p>
+
+                    <p class="mt-3">
+                        We operate Monday–Friday with flexible timezone overlap,
+                        supporting teams in NZ, Australia, MEA, SE Asia,
+                        Europe, and North America.
+                    </p>
+
+                    <p class="mt-3">
+                        <strong>Email:</strong>
+                        <a href="mailto:akhilesh@vipratech.in">
+                            akhilesh@vipratech.in
+                        </a>
+                    </p>
+
+                    <ul class="mt-4 contact-points">
+                        <li>Architecture review & discovery</li>
+                        <li>Fractional platform team delivery</li>
+                        <li>Engineering mentorship & hiring support</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

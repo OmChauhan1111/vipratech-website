@@ -1,0 +1,1215 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title> {% block title %}{% endblock title  %} | Vipra tech Labs</title>
+
+
+    <style>
+
+
+
+
+      
+        /* Section Heading */
+
+
+
+
+/* HERO BACKGROUND */
+
+
+section {
+    padding: 80px 0;
+}
+
+/* HERO */
+.portfolio-hero {
+    background: linear-gradient(135deg, #f5f9ff, #eef4ff);
+}
+
+.hero-title {
+    font-size: 44px;
+}
+
+.hero-badge {
+    background: #e7f0ff;
+    color: #0d6efd;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.hero-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hero-list li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.hero-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0d6efd;
+}
+
+.hero-card {
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-8px);
+}
+
+/* FEATURES */
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+/* PROJECTS */
+.project-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-tags span {
+    background: #eef4ff;
+    color: #0d6efd;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+/* TEAM */
+.team-section {
+    background: linear-gradient(135deg, #f5f9ff, #eef4ff);
+}
+
+.team-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-img-wrapper {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-primary,
+.btn-outline-primary {
+    border-radius: 30px;
+}
+.portfolio-hero {
+    background: #f4f7fb;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Badge */
+.hero-badge {
+    background: #e7f0ff;
+    color: #0d6efd;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Title */
+.hero-title {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+/* Bullet list */
+.hero-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hero-list li {
+    margin-bottom: 10px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.hero-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* RIGHT CARD */
+.hero-card {
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    position: relative;
+}
+
+/* Badge inside card */
+.card-badge {
+    background: #e7f0ff;
+    color: #0d6efd;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Button polish */
+.btn-primary {
+    border-radius: 30px;
+}
+
+.btn-outline-primary {
+    border-radius: 30px;
+}
+
+/* Hover lift */
+.hero-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+
+.jumbotron h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* SVG Top Area Styling */
+.card svg {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Center the SVG Text Perfectly */
+.card svg text {
+    font-size: 18px;
+    font-weight: 600;
+    text-anchor: middle;      /* horizontal center */
+    dominant-baseline: middle; /* vertical center */
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 20px;
+}
+
+/* List Styling */
+.card-body ul {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.card-body ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* Paragraph Styling */
+.card-text {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Section Spacing */
+.album {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* HERO */
+.about-hero {
+    background: #f4f7fb;
+}
+
+.about-badge {
+    background: #e9f2ff;
+    color: #0d6efd;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero-subtext {
+    max-width: 650px;
+}
+
+/* LEFT PANEL */
+.about-left {
+    background: linear-gradient(135deg, #0d6efd, #1e3c72);
+    border-radius: 24px;
+    color: white;
+    height: 100%;
+}
+
+.mini-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.stats h2 {
+    font-weight: bold;
+}
+
+.clean-list {
+    padding-left: 18px;
+}
+
+.clean-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* RIGHT CARDS */
+.info-card {
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #e9ecef;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* PROCESS */
+.process-box {
+    background: #f8fafc;
+    border-radius: 24px;
+    border: 1px solid #e9ecef;
+}
+
+.process-title {
+    letter-spacing: 2px;
+    color: #6c757d;
+}
+
+.step-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #0d6efd, #20c997);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* HERO BOX */
+.services-hero {
+    background: #f4f7fb;
+}
+
+.hero-box {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+/* WRAPPER BACKGROUND */
+.services-wrapper {
+    background: #f4f7fb;
+}
+
+/* LEFT BLUE PANEL */
+.services-left {
+    background: linear-gradient(135deg, #0d6efd, #1e3c72);
+    border-radius: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft glow effect */
+.services-left::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    top: -60px;
+    right: -60px;
+}
+
+.mini-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+/* Bullet list */
+.service-list {
+    padding-left: 18px;
+}
+
+.service-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* RIGHT CARDS */
+.service-card {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(13,110,253,0.15);
+}
+
+/* Smooth fade animation */
+.service-card {
+    animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* TEAM SECTION */
+.team-section {
+    background: #f4f7fb;
+}
+
+/* CARD STYLE */
+.team-card {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+    transition: 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(13,110,253,0.15);
+}
+
+/* IMAGE BORDER EFFECT */
+.team-img-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(135deg, #0d6efd, #1e3c72);
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* FOOTER MAIN */
+.vipra-footer {
+    background: linear-gradient(135deg, #0d6efd, #1e3c72);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft glow background circle */
+.vipra-footer::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    top: -80px;
+    left: -80px;
+}
+
+/* Badge */
+.footer-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+/* Divider */
+.footer-divider {
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+/* Bottom links */
+.footer-bottom-links a {
+    color: rgba(255,255,255,0.9);
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.contact-hero {
+    background: #f4f7fb;
+}
+
+.contact-badge {
+    background: #e7f0ff;
+    color: #0d6efd;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* FORM CARD */
+.contact-card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+}
+
+/* MODERN INPUT */
+.modern-input {
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    padding: 10px 14px;
+    transition: 0.3s;
+}
+
+.modern-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13,110,253,0.15);
+}
+
+/* RIGHT PANEL */
+.contact-info {
+    background: linear-gradient(135deg, #0d6efd, #1e3c72);
+    color: white;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    top: -60px;
+    right: -60px;
+}
+
+/* LINKS */
+.contact-info a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact-points {
+    padding-left: 18px;
+}
+
+.contact-points li {
+    margin-bottom: 8px;
+}
+
+/* HERO */
+.projects-hero {
+    background: #f4f7fb;
+}
+
+.projects-badge {
+    background: #e7f0ff;
+    color: #0d6efd;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* WRAPPER */
+.projects-wrapper {
+    background: #f8fafc;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: white;
+    border-radius: 24px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(13,110,253,0.12);
+}
+
+/* TAG BADGES */
+.project-tags span {
+    display: inline-block;
+    background: #e7f0ff;
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-right: 6px;
+}
+
+/* SLIDER DOTS */
+.dot {
+    height: 8px;
+    width: 8px;
+    background: #cbd5e1;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.dot.active {
+    background: #0d6efd;
+}
+
+
+/* TOP BAR */
+.top-bar {
+  background: linear-gradient(90deg, #1e66d0, #0d6efd);
+}
+
+/* NAVBAR */
+.main-navbar {
+  background: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+  color: #0d1b2a;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #1f2d3d;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+
+
+
+{% comment %} /* ACTIVE LINK UNDERLINE */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0d6efd;
+  border-radius: 2px;
+} {% endcomment %}
+
+/* CAREERS BUTTON */
+.careers-btn {
+  background: linear-gradient(90deg, #1e66d0, #0d6efd);
+  color: white;
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.careers-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(13,110,253,0.3);
+  color: white;
+}
+
+/* TOGGLER FIX */
+.navbar-toggler {
+  border: none;
+}
+
+
+/* SECTION BACKGROUND */
+.how-section {
+    background: linear-gradient(135deg, #f4f8ff, #eef4ff);
+}
+
+/* Badge */
+.how-badge {
+    background: #e7f0ff;
+    color: #0d6efd;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Cards */
+.how-card {
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.how-card:hover {
+    transform: translateY(-8px);
+}
+
+/* List */
+.how-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.how-list li {
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+    color: #4a5568;
+}
+
+.how-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-outline-primary {
+    border-radius: 30px;
+}
+
+
+.career-hero {
+  background: linear-gradient(135deg,#f5f9ff,#eaf2ff);
+}
+
+.info-card {
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+.apply-section {
+  background: linear-gradient(135deg,#f5f9ff,#eaf2ff);
+}
+
+.apply-left {
+  background: #cfe2ff;
+  border-radius: 20px;
+}
+
+.apply-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.modern-input {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.upload-box {
+  border: 2px dashed #3b82f6;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: #f0f6ff;
+}
+
+.apply-list li {
+  margin-bottom: 10px;
+}
+
+
+.card {
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.apply-left {
+  background: linear-gradient(135deg, #e9f2ff, #f6f9ff);
+  border-radius: 20px;
+}
+
+.apply-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.top-bar {
+  background: linear-gradient(90deg, #1e66f5, #2563eb);
+  color: white;
+  font-weight: 500;
+}
+
+.top-bar span {
+  opacity: 0.9;
+}
+
+.top-bar span:hover {
+  opacity: 1;
+}
+
+.top-info i {
+  margin-right: 5px;
+}
+
+
+.hero-list,
+.how-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hero-list li,
+.how-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hero-list li::before,
+.how-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg fill='%230d6efd' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23e7f1ff'/%3E%3Cpath d='M7 12l3 3 7-7' stroke='%230d6efd' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-list li:hover::before,
+.how-list li:hover::before {
+    transform: scale(1.2) rotate(8deg);
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+}
+
+.hero-list li:hover,
+.how-list li:hover {
+    transform: translateX(6px);
+}
+
+.hero-list li,
+.how-list li {
+    opacity: 0;
+    transform: translateX(-15px);
+    animation: fadeSlide 0.6s forwards;
+}
+
+.hero-list li:nth-child(1),
+.how-list li:nth-child(1) { animation-delay: 0.1s; }
+
+.hero-list li:nth-child(2),
+.how-list li:nth-child(2) { animation-delay: 0.2s; }
+
+.hero-list li:nth-child(3),
+.how-list li:nth-child(3) { animation-delay: 0.3s; }
+
+.hero-list li:nth-child(4),
+.how-list li:nth-child(4) { animation-delay: 0.4s; }
+
+.hero-list li:nth-child(5),
+.how-list li:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeSlide {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.footer-section {
+    background-color: #0f172a;
+    color: #cbd5e1;
+}
+
+.footer-section h5 {
+    color: #ffffff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0d6efd;
+    padding-left: 5px;
+}
+
+.footer-divider {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.footer-bottom-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #0d6efd;
+}
+
+/* MAP STYLING */
+.map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.map-wrapper iframe {
+    filter: grayscale(100%) contrast(1.1);
+    transition: 0.3s ease;
+}
+
+.map-wrapper:hover {
+    transform: scale(1.02);
+}
+
+.map-wrapper:hover iframe {
+    filter: grayscale(0%);
+}
+
+.map-wrapper {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    transition: 0.4s ease;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    filter: grayscale(100%) contrast(1.05);
+    transition: 0.4s ease;
+}
+
+.map-wrapper:hover {
+    transform: scale(1.02);
+}
+
+.map-wrapper:hover iframe {
+    filter: grayscale(0%);
+}
+    </style>
+  </head>
+  <body>
+<!-- TOP CONTACT BAR -->
+<div class="top-bar py-2">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+    <div class="top-info d-flex gap-4 flex-wrap small">
+      <span><i class="bi bi-envelope"></i> akhilesh@vipratech.in</span>
+      <span><i class="bi bi-telephone"></i> +91 7023415753</span>
+      <span><i class="bi bi-geo-alt"></i> NZ & Australia Clients</span>
+      <span><i class="bi bi-globe"></i> ME · SEA · EU · US · AUS</span>
+    </div>
+
+  </div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand fw-bold" href="/">
+      <img src="/static/logo.jpg" height="40" class="me-2">
+    </a>
+
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+
+        {% comment %} <li class="nav-item">
+          <a class="nav-link" href="/how-we-work">How We Work</a>
+        </li> {% endcomment %}
+
+       
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- CAREERS BUTTON -->
+      <a href="/career" class="btn careers-btn">
+        Careers
+      </a>
+
+    </div>
+  </div>
+</nav>
+{% block body %}
+
+{% endblock body %}
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+   <!-- FOOTER -->
+<footer class="vipra-footer pt-5 pb-3">
+
+    <div class="container">
+        <div class="row">
+
+            <!-- LEFT -->
+            <div class="col-lg-5 mb-4">
+                <span class="footer-badge mb-3 d-inline-block">
+                    ✨ Engineered for reliable platforms
+                </span>
+
+                <h3 class="fw-bold mt-3">VipraTech</h3>
+
+                <p class="mt-3 opacity-75">
+                    Partner with us to deliver resilient Python platforms and
+                    agentic AI systems that your teams can scale with confidence.
+                </p>
+            </div>
+
+
+
+
+
+
+
+
+           
+           
+           
+         <footer class="footer-section pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+
+            <!-- CONTACT -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="fw-bold mb-3">Contact</h5>
+
+                <p>📧 akhilesh@vipratech.in</p>
+                <p>📞 +91 7023415753</p>
+                <p>
+                    📍 Hotel Namo Palace, Nanta Road, Kunhari,<br>
+                    Kota, Rajasthan - 324008
+                </p>
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="col-lg-3 mb-4">
+                <h5 class="fw-bold mb-3">Navigate</h5>
+
+                <ul class="footer-links">
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Form</a></li>
+                    <li><a href="/career">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- MAP -->
+            <div class="col-lg-5 mb-4">
+                <h5 class="fw-bold mb-3">Find Us</h5>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2798066661117!2d75.82369137538173!3d25.193784777713088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9baa6faf0b01%3A0xf876edec1508f51e!2sVipraTech%20Global!5e0!3m2!1sen!2sin!4v1772012342124!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap pt-3">
+
+            <p class="mb-0 small">
+                © 2026 VipraTech. Built for reliability & velocity.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="mailto:akhilesh@vipratech.in">Email us</a>
+                <a href="tel:+917023415753">Call us</a>
+                <a href="#">Back to top</a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+  </body>
+</html>
